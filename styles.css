@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #525050;
+}
+
+#circuit-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    background-color: black;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.node {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    padding: 0; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.node:hover {
+    background-color: #0056b3;
+}

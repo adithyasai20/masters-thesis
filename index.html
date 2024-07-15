@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Circuit Editor</title>
+</head>
+<body>
+
+    <div id = "circuit-container">
+        <canvas id = "circuit-playground" width="1300" height="650"></canvas>
+        <div id="button-container">
+            <button class="node" id="wire" onclick="setMode('wire')">Wire</button>
+            <button class="node" id="inverter" onclick="setMode('inverter')">Inverter</button>
+            <button class="node" id="input" onclick="setMode('input')">Input</button>
+            <button class="node" id="output" onclick="setMode('output')">Output</button>
+            <button class="node" id="and" onclick="setMode('and')">AND</button>
+            <button class="node" id="or" onclick="setMode('or')">OR</button>
+            <button class="node" id="xor" onclick="setMode('xor')">XOR</button>
+            <button class="node" id="xnor" onclick="setMode('xnor')">XNOR</button>
+            <button class="node" id="nand" onclick="setMode('nand')">NAND</button>
+            <button class="node" id="nor" onclick="setMode('nor')">NOR</button>
+
+        </div>
+        
+    </div>
+    
+    <script src="js/primitives/point.js"></script>
+    <script src="js/primitives/segment.js"></script>
+
+    <script src="js/components/inverter.js"></script> 
+    <script src="js/components/input.js"></script>
+    <script src="js/components/output.js"></script>
+    <script src="js/components/and.js"></script>
+    <script src="js/components/or.js"></script>
+    <script src="js/components/xnor.js"></script>
+    <script src="js/components/xor.js"></script>
+    <script src="js/components/nand.js"></script>
+    <script src="js/components/nor.js"></script>
+
+    <script src="js/viewport.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/math/utils.js"></script>
+    <script src="js/math/graph.js"></script>
+
+    <script src="js/editors/componentEditor.js"></script>
+    <script src="js/editors/inverterEditor.js"></script>
+    <script src="js/editors/wireEditor.js"></script>
+    <script src="js/editors/inputEditor.js"></script>
+    <script src="js/editors/outputEditor.js"></script>
+    <script src="js/editors/andEditor.js"></script>
+    <script src="js/editors/orEditor.js"></script>
+    <script src="js/editors/xorEditor.js"></script>
+    <script src="js/editors/xnorEditor.js"></script>
+    <script src="js/editors/nandEditor.js"></script>
+    <script src="js/editors/norEditor.js"></script>
+    
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
